@@ -160,9 +160,16 @@ html {
     color: silver;
     margin: 15px 0 10px;
 }
-
+.portfolio-grid{
+    flex-wrap: wrap;
+}
 .project-card p {
     color: #E0E0E0;
+}
+@media {max-width:768} {
+.portfolio-grid{
+    flex:  1 100%;
+}
 }
 
 .links a {
