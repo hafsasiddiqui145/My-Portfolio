@@ -1,0 +1,355 @@
+/* General Styling */
+body {
+    background-color: #000000;
+    color: silver;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    width: 100%;
+    background-color: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 15px silver;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: silver;
+    margin-left:20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: silver;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #E0E0E0;
+    text-shadow: 0px 0px 10px silver;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 90vh;
+}
+
+/* Left Side: Typewriter Effect */
+.text-container {
+    width: 50%;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Name heading */
+.name-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: silver;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 10px silver;
+}
+
+/* Fixed text */
+.fixed-text {
+    color: silver;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Dynamic text: Highlighted */
+.typewriter {
+    color: #E0E0E0;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px #D1D1D1;
+    animation: highlight 1.5s infinite alternate;
+}
+
+/* Highlight animation */
+@keyframes highlight {
+    0% { color: #FFFFFF; text-shadow: 0px 0px 15px white; }
+    100% { color: #D1D1D1; text-shadow: 0px 0px 10px silver; }
+}
+
+/* Right Side: Circular Profile Image */
+.image-container {
+    width: 50%;
+    text-align: right;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid silver;
+    box-shadow: 0px 0px 15px silver;
+}
+
+.portfolio {
+    width: 80%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: silver;
+    text-shadow: 0px 0px 10px silver;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #111;
+    border: 2px solid silver;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px silver;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px silver;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: silver;
+    margin: 15px 0 10px;
+}
+
+.project-card p {
+    color: #E0E0E0;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background-color: white;
+    color: #111;
+    box-shadow: 0px 0px 10px silver;
+}
+/* Call-To-Action Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px silver;
+}
+
+.cta-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 15px silver;
+}
+.about {
+    width: 80%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: silver;
+    text-shadow: 0px 0px 10px silver;
+    margin-bottom: 30px;
+}
+
+/* About Section Layout */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Left Side: Text */
+.about-text {
+    width: 60%;
+    text-align: left;
+    color: #E0E0E0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: silver;
+    text-shadow: 0px 0px 10px silver;
+    margin-bottom: 15px;
+}
+
+/* Right Side: Profile Image */
+.about-image {
+    width: 40%;
+    text-align: right;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid silver;
+    box-shadow: 0px 0px 15px silver;
+}
+
+/* Call-To-Action Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px silver;
+}
+
+.cta-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 15px silver;
+}
+/* Contact Section */
+.contact {
+    width: 80%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Title */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: silver;
+    text-shadow: 0px 0px 10px silver;
+    margin-bottom: 30px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Default black icons */
+.social-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 32px;
+    text-decoration: none;
+    background-color: black;
+    color: silver;
+    box-shadow: 0px 0px 15px silver;
+    transition: 0.3s;
+}
+
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    color: silver;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 15px silver;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: 0.3s;
+}
+
+/* Neon Glow Effect on Click */
+.scroll-btn:active {
+    box-shadow: 0px 0px 20px white;
+    transform: scale(1.1);
+}
+
+/* Click Effect: Neon Activation */
+.social-icon:active {
+    box-shadow: 0px 0px 20px white;
+    transform: scale(1.2);
+}
+
+/* Specific Colors */
+.instagram:active { background-color: #E1306C; color: white; }
+.facebook:active { background-color: #1877F2; color: white; }
+.github:active { background-color: #333; color: white; }
+.email:active { background-color: #FFCC00; color: black; }
+
+/* Ensure FontAwesome Loads Properly */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
